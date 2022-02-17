@@ -1,0 +1,501 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 9900 1000 0    50   Output ~ 0
+Butt1
+Text GLabel 9000 2000 0    50   Input ~ 0
+LEDR4
+Text GLabel 7850 2000 0    50   Input ~ 0
+LEDR3
+Text GLabel 6700 2000 0    50   Input ~ 0
+LEDR2
+Text GLabel 5550 2000 0    50   Input ~ 0
+LEDR1
+$Comp
+L power:GND #PWR0192
+U 1 1 610496FF
+P 10050 900
+F 0 "#PWR0192" H 10050 650 50  0001 C CNN
+F 1 "GND" V 10055 772 50  0000 R CNN
+F 2 "" H 10050 900 50  0001 C CNN
+F 3 "" H 10050 900 50  0001 C CNN
+	1    10050 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0193
+U 1 1 61049705
+P 10050 1900
+F 0 "#PWR0193" H 10050 1650 50  0001 C CNN
+F 1 "GND" H 10055 1727 50  0000 C CNN
+F 2 "" H 10050 1900 50  0001 C CNN
+F 3 "" H 10050 1900 50  0001 C CNN
+	1    10050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1900 10050 1800
+Wire Wire Line
+	10050 1700 10200 1700
+Wire Wire Line
+	10200 1800 10050 1800
+Connection ~ 10050 1800
+Wire Wire Line
+	10050 1800 10050 1700
+Wire Wire Line
+	10050 900  10200 900 
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 61049717
+P 10400 1300
+AR Path="/61049717" Ref="J?"  Part="1" 
+AR Path="/60FC835E/61049717" Ref="J8"  Part="1" 
+F 0 "J8" H 10428 1276 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 10428 1185 50  0000 L CNN
+F 2 "CustomLib:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10400 1300 50  0001 C CNN
+F 3 "~" H 10400 1300 50  0001 C CNN
+	1    10400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 6104D4CC
+P 10250 5050
+AR Path="/6104D4CC" Ref="J?"  Part="1" 
+AR Path="/60FC835E/6104D4CC" Ref="J4"  Part="1" 
+F 0 "J4" H 10278 5026 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 10278 4935 50  0000 L CNN
+F 2 "CustomLib:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10250 5050 50  0001 C CNN
+F 3 "~" H 10250 5050 50  0001 C CNN
+	1    10250 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 1100 0    50   Output ~ 0
+Butt2
+Text GLabel 9900 1200 0    50   Output ~ 0
+Butt3
+Wire Wire Line
+	9900 1000 10200 1000
+Wire Wire Line
+	9900 1100 10200 1100
+Wire Wire Line
+	9900 1200 10200 1200
+$Comp
+L power:GND #PWR0194
+U 1 1 61056144
+P 10000 5600
+F 0 "#PWR0194" H 10000 5350 50  0001 C CNN
+F 1 "GND" H 10005 5427 50  0000 C CNN
+F 2 "" H 10000 5600 50  0001 C CNN
+F 3 "" H 10000 5600 50  0001 C CNN
+	1    10000 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5600 10000 5550
+Wire Wire Line
+	10000 5550 10050 5550
+Text GLabel 9050 5850 0    50   Input ~ 0
+LEDR5
+Text GLabel 2250 4350 0    50   Input ~ 0
+LEDC1
+Text GLabel 3300 4350 0    50   Input ~ 0
+LEDC2
+Text GLabel 4350 4350 0    50   Input ~ 0
+LEDC3
+Text GLabel 5400 4350 0    50   Input ~ 0
+LEDC4
+Text GLabel 6450 4350 0    50   Input ~ 0
+LEDC5
+Text GLabel 7500 4350 0    50   Input ~ 0
+LEDC6
+Text GLabel 8550 4350 0    50   Input ~ 0
+LEDC7
+Text GLabel 9600 4350 0    50   Input ~ 0
+LEDC8
+$Comp
+L power:GND #PWR0195
+U 1 1 61059C78
+P 9400 6150
+F 0 "#PWR0195" H 9400 5900 50  0001 C CNN
+F 1 "GND" H 9405 5977 50  0000 C CNN
+F 2 "" H 9400 6150 50  0001 C CNN
+F 3 "" H 9400 6150 50  0001 C CNN
+	1    9400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 6150 9400 6050
+Wire Wire Line
+	9400 5650 9400 5050
+Wire Wire Line
+	9400 5050 10050 5050
+Wire Wire Line
+	9100 5850 9050 5850
+$Comp
+L Device:R R63
+U 1 1 6105D491
+P 9050 3800
+F 0 "R63" H 9120 3846 50  0000 L CNN
+F 1 "120" H 9120 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 3800 50  0001 C CNN
+F 3 "~" H 9050 3800 50  0001 C CNN
+	1    9050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS84 Q13
+U 1 1 6105DBCD
+P 9850 4350
+F 0 "Q13" H 10054 4304 50  0000 L CNN
+F 1 "BSS84" H 10054 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10050 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 9850 4350 50  0001 L CNN
+	1    9850 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9950 4550 9950 4650
+Wire Wire Line
+	9950 4650 10050 4650
+Wire Wire Line
+	9600 4350 9650 4350
+Wire Wire Line
+	9950 4150 9950 4050
+Wire Wire Line
+	9950 4050 9050 4050
+Wire Wire Line
+	9050 4050 9050 3950
+$Comp
+L Transistor_FET:BSS84 Q10
+U 1 1 61062652
+P 8800 4350
+F 0 "Q10" H 9004 4304 50  0000 L CNN
+F 1 "BSS84" H 9004 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9000 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 8800 4350 50  0001 L CNN
+	1    8800 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8900 4150 8900 4050
+Connection ~ 9050 4050
+Wire Wire Line
+	8900 4550 8900 4750
+Wire Wire Line
+	8550 4350 8600 4350
+$Comp
+L Transistor_FET:BSS84 Q9
+U 1 1 61065897
+P 7750 4350
+F 0 "Q9" H 7954 4304 50  0000 L CNN
+F 1 "BSS84" H 7954 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7950 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 7750 4350 50  0001 L CNN
+	1    7750 4350
+	1    0    0    1   
+$EndComp
+Connection ~ 8900 4050
+Wire Wire Line
+	8900 4050 9050 4050
+Wire Wire Line
+	8900 4750 10050 4750
+Wire Wire Line
+	7500 4350 7550 4350
+Wire Wire Line
+	7850 4550 7850 4850
+Wire Wire Line
+	7850 4850 10050 4850
+Wire Wire Line
+	7850 4150 7850 4050
+Wire Wire Line
+	7850 4050 8900 4050
+$Comp
+L Transistor_FET:BSS84 Q7
+U 1 1 6106AFF3
+P 6700 4350
+F 0 "Q7" H 6904 4304 50  0000 L CNN
+F 1 "BSS84" H 6904 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 6700 4350 50  0001 L CNN
+	1    6700 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6800 4150 6800 4050
+Wire Wire Line
+	6800 4050 7850 4050
+Connection ~ 7850 4050
+Wire Wire Line
+	6800 4550 6800 4950
+Wire Wire Line
+	6800 4950 10050 4950
+Wire Wire Line
+	6500 4350 6450 4350
+$Comp
+L Transistor_FET:BSS84 Q5
+U 1 1 6106EC1D
+P 5650 4350
+F 0 "Q5" H 5854 4304 50  0000 L CNN
+F 1 "BSS84" H 5854 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5850 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 5650 4350 50  0001 L CNN
+	1    5650 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5750 4150 5750 4050
+Wire Wire Line
+	5750 4050 6800 4050
+Connection ~ 6800 4050
+Wire Wire Line
+	5400 4350 5450 4350
+Wire Wire Line
+	5750 4550 5750 5150
+Wire Wire Line
+	5750 5150 10050 5150
+$Comp
+L Transistor_FET:BSS84 Q4
+U 1 1 61089250
+P 4600 4350
+F 0 "Q4" H 4804 4304 50  0000 L CNN
+F 1 "BSS84" H 4804 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 4600 4350 50  0001 L CNN
+	1    4600 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 4350 4400 4350
+Wire Wire Line
+	4700 4150 4700 4050
+Wire Wire Line
+	4700 4050 5750 4050
+Connection ~ 5750 4050
+Wire Wire Line
+	4700 4550 4700 5250
+Wire Wire Line
+	4700 5250 10050 5250
+$Comp
+L Transistor_FET:BSS84 Q2
+U 1 1 6108D727
+P 3550 4350
+F 0 "Q2" H 3754 4304 50  0000 L CNN
+F 1 "BSS84" H 3754 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 3550 4350 50  0001 L CNN
+	1    3550 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4150 3650 4050
+Wire Wire Line
+	3650 4050 4700 4050
+Connection ~ 4700 4050
+Wire Wire Line
+	3300 4350 3350 4350
+Wire Wire Line
+	3650 4550 3650 5350
+$Comp
+L Transistor_FET:BSS84 Q1
+U 1 1 61092BCE
+P 2500 4350
+F 0 "Q1" H 2704 4304 50  0000 L CNN
+F 1 "BSS84" H 2704 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 4275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 2500 4350 50  0001 L CNN
+	1    2500 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 4150 2600 4050
+Wire Wire Line
+	2600 4050 3650 4050
+Connection ~ 3650 4050
+Wire Wire Line
+	2250 4350 2300 4350
+Wire Wire Line
+	2600 4550 2600 5450
+Wire Wire Line
+	3650 5350 10050 5350
+Wire Wire Line
+	2600 5450 10050 5450
+$Comp
+L power:GND #PWR0196
+U 1 1 6109B14D
+P 9350 2300
+F 0 "#PWR0196" H 9350 2050 50  0001 C CNN
+F 1 "GND" H 9355 2127 50  0000 C CNN
+F 2 "" H 9350 2300 50  0001 C CNN
+F 3 "" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2300 9350 2200
+Wire Wire Line
+	9000 2000 9050 2000
+Wire Wire Line
+	9350 1800 9350 1600
+Wire Wire Line
+	9350 1600 10200 1600
+$Comp
+L power:GND #PWR0197
+U 1 1 610AC95B
+P 8200 2300
+F 0 "#PWR0197" H 8200 2050 50  0001 C CNN
+F 1 "GND" H 8205 2127 50  0000 C CNN
+F 2 "" H 8200 2300 50  0001 C CNN
+F 3 "" H 8200 2300 50  0001 C CNN
+	1    8200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2300 8200 2200
+Wire Wire Line
+	7850 2000 7900 2000
+Wire Wire Line
+	8200 1800 8200 1500
+$Comp
+L power:GND #PWR0198
+U 1 1 610B6C79
+P 7050 2300
+F 0 "#PWR0198" H 7050 2050 50  0001 C CNN
+F 1 "GND" H 7055 2127 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2300 7050 2200
+Wire Wire Line
+	6700 2000 6750 2000
+Wire Wire Line
+	7050 1800 7050 1400
+$Comp
+L power:GND #PWR0199
+U 1 1 610BF746
+P 5900 2300
+F 0 "#PWR0199" H 5900 2050 50  0001 C CNN
+F 1 "GND" H 5905 2127 50  0000 C CNN
+F 2 "" H 5900 2300 50  0001 C CNN
+F 3 "" H 5900 2300 50  0001 C CNN
+	1    5900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2300 5900 2200
+Wire Wire Line
+	5550 2000 5600 2000
+Wire Wire Line
+	5900 1800 5900 1300
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 610CBDF1
+P 9050 3400
+F 0 "RV1" H 8980 3446 50  0000 R CNN
+F 1 "3k3" H 8980 3355 50  0000 R CNN
+F 2 "CustomLib:VG039N" H 9050 3400 50  0001 C CNN
+F 3 "~" H 9050 3400 50  0001 C CNN
+	1    9050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3250 9050 3150
+Wire Wire Line
+	9200 3400 9300 3400
+Wire Wire Line
+	9300 3400 9300 3600
+Wire Wire Line
+	9300 3600 9050 3600
+Wire Wire Line
+	9050 3600 9050 3650
+Wire Wire Line
+	9050 3600 9050 3550
+Connection ~ 9050 3600
+$Comp
+L power:+5V #PWR0200
+U 1 1 610D3E2F
+P 9050 3150
+F 0 "#PWR0200" H 9050 3000 50  0001 C CNN
+F 1 "+5V" H 9065 3323 50  0000 C CNN
+F 2 "" H 9050 3150 50  0001 C CNN
+F 3 "" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q12
+U 1 1 60D4AD9B
+P 9300 5850
+F 0 "Q12" H 9504 5896 50  0000 L CNN
+F 1 "2N7002" H 9504 5805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9500 5775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9300 5850 50  0001 L CNN
+	1    9300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q11
+U 1 1 60D583AE
+P 9250 2000
+F 0 "Q11" H 9454 2046 50  0000 L CNN
+F 1 "2N7002" H 9454 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 1925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9250 2000 50  0001 L CNN
+	1    9250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q8
+U 1 1 60D5EF94
+P 8100 2000
+F 0 "Q8" H 8304 2046 50  0000 L CNN
+F 1 "2N7002" H 8304 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 1925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 8100 2000 50  0001 L CNN
+	1    8100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1500 10200 1500
+$Comp
+L Transistor_FET:2N7002 Q6
+U 1 1 60D6862D
+P 6950 2000
+F 0 "Q6" H 7154 2046 50  0000 L CNN
+F 1 "2N7002" H 7154 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7150 1925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6950 2000 50  0001 L CNN
+	1    6950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1400 10200 1400
+$Comp
+L Transistor_FET:2N7002 Q3
+U 1 1 60D725DE
+P 5800 2000
+F 0 "Q3" H 6004 2046 50  0000 L CNN
+F 1 "2N7002" H 6004 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 1925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 5800 2000 50  0001 L CNN
+	1    5800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1300 10200 1300
+$EndSCHEMATC
