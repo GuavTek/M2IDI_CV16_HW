@@ -19,7 +19,7 @@ U 1 1 607BE13D
 P 2450 1900
 F 0 "J20" H 2500 2417 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 2500 2326 50  0000 C CNN
-F 2 "CustomLib:Header_2x8_Shrouded_SMD" H 2450 1900 50  0001 C CNN
+F 2 "Custom_FP:Header_2x8_Shrouded_SMD" H 2450 1900 50  0001 C CNN
 F 3 "~" H 2450 1900 50  0001 C CNN
 	1    2450 1900
 	1    0    0    1   

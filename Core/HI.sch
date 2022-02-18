@@ -64,7 +64,7 @@ AR Path="/61049717" Ref="J?"  Part="1"
 AR Path="/60FC835E/61049717" Ref="J8"  Part="1" 
 F 0 "J8" H 10428 1276 50  0000 L CNN
 F 1 "Conn_01x10_Female" H 10428 1185 50  0000 L CNN
-F 2 "CustomLib:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10400 1300 50  0001 C CNN
+F 2 "Custom_FP:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10400 1300 50  0001 C CNN
 F 3 "~" H 10400 1300 50  0001 C CNN
 	1    10400 1300
 	1    0    0    -1  
@@ -77,7 +77,7 @@ AR Path="/6104D4CC" Ref="J?"  Part="1"
 AR Path="/60FC835E/6104D4CC" Ref="J4"  Part="1" 
 F 0 "J4" H 10278 5026 50  0000 L CNN
 F 1 "Conn_01x10_Female" H 10278 4935 50  0000 L CNN
-F 2 "CustomLib:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10250 5050 50  0001 C CNN
+F 2 "Custom_FP:PinSocket_1x10_P2.54mm_Vertical_SMD_Pin1Both" H 10250 5050 50  0001 C CNN
 F 3 "~" H 10250 5050 50  0001 C CNN
 	1    10250 5050
 	1    0    0    -1  
@@ -408,7 +408,7 @@ U 1 1 610CBDF1
 P 9050 3400
 F 0 "RV1" H 8980 3446 50  0000 R CNN
 F 1 "3k3" H 8980 3355 50  0000 R CNN
-F 2 "CustomLib:VG039N" H 9050 3400 50  0001 C CNN
+F 2 "Custom_FP:VG039N" H 9050 3400 50  0001 C CNN
 F 3 "~" H 9050 3400 50  0001 C CNN
 	1    9050 3400
 	1    0    0    -1  

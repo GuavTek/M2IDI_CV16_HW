@@ -19,7 +19,7 @@ U 1 1 5F8F8341
 P 2550 1700
 F 0 "J1" H 2630 1742 50  0000 L CNN
 F 1 "Screw_Terminal_01x01" H 2630 1651 50  0000 L CNN
-F 2 "CustomLib:Wide_M3" H 2550 1700 50  0001 C CNN
+F 2 "Custom_FP:Wide_M3" H 2550 1700 50  0001 C CNN
 F 3 "~" H 2550 1700 50  0001 C CNN
 	1    2550 1700
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5F8F84F5
 P 2550 1950
 F 0 "J2" H 2630 1992 50  0000 L CNN
 F 1 "Screw_Terminal_01x01" H 2630 1901 50  0000 L CNN
-F 2 "CustomLib:Wide_M3" H 2550 1950 50  0001 C CNN
+F 2 "Custom_FP:Wide_M3" H 2550 1950 50  0001 C CNN
 F 3 "~" H 2550 1950 50  0001 C CNN
 	1    2550 1950
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5F8F878B
 P 2550 2200
 F 0 "J3" H 2630 2242 50  0000 L CNN
 F 1 "Screw_Terminal_01x01" H 2630 2151 50  0000 L CNN
-F 2 "CustomLib:Wide_M3" H 2550 2200 50  0001 C CNN
+F 2 "Custom_FP:Wide_M3" H 2550 2200 50  0001 C CNN
 F 3 "~" H 2550 2200 50  0001 C CNN
 	1    2550 2200
 	1    0    0    -1  
@@ -52,18 +52,18 @@ U 1 1 5F8F8795
 P 2550 2450
 F 0 "J4" H 2630 2492 50  0000 L CNN
 F 1 "Screw_Terminal_01x01" H 2630 2401 50  0000 L CNN
-F 2 "CustomLib:Wide_M3" H 2550 2450 50  0001 C CNN
+F 2 "Custom_FP:Wide_M3" H 2550 2450 50  0001 C CNN
 F 3 "~" H 2550 2450 50  0001 C CNN
 	1    2550 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J5
+L Mechanical:MountingHole J5
 U 1 1 5F8F93E6
 P 5750 1400
 F 0 "J5" H 5830 1442 50  0000 L CNN
 F 1 "Conn_01x01" H 5830 1351 50  0000 L CNN
-F 2 "CustomLib:TactileHole" H 5750 1400 50  0001 C CNN
+F 2 "Custom_FP:TactileHole" H 5750 1400 50  0001 C CNN
 F 3 "~" H 5750 1400 50  0001 C CNN
 	1    5750 1400
 	1    0    0    -1  
@@ -113,17 +113,6 @@ F 3 "~" H 5750 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
-U 1 1 5F8FB6FD
-P 5500 1450
-F 0 "#PWR03" H 5500 1200 50  0001 C CNN
-F 1 "GND" H 5505 1277 50  0000 C CNN
-F 2 "" H 5500 1450 50  0001 C CNN
-F 3 "" H 5500 1450 50  0001 C CNN
-	1    5500 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5F8FB931
 P 5450 2700
@@ -153,47 +142,33 @@ Wire Wire Line
 Connection ~ 5450 2550
 Wire Wire Line
 	5450 2550 5450 2350
-Wire Wire Line
-	5500 1450 5500 1400
-Wire Wire Line
-	5500 1400 5550 1400
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Mechanical:MountingHole J11
 U 1 1 60B5923E
 P 5750 1200
-F 0 "J?" H 5830 1242 50  0000 L CNN
+F 0 "J11" H 5830 1242 50  0000 L CNN
 F 1 "Conn_01x01" H 5830 1151 50  0000 L CNN
-F 2 "CustomLib:TactileHole" H 5750 1200 50  0001 C CNN
+F 2 "Custom_FP:TactileHole" H 5750 1200 50  0001 C CNN
 F 3 "~" H 5750 1200 50  0001 C CNN
 	1    5750 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Mechanical:MountingHole J10
 U 1 1 60B593FA
 P 5750 1000
-F 0 "J?" H 5830 1042 50  0000 L CNN
+F 0 "J10" H 5830 1042 50  0000 L CNN
 F 1 "Conn_01x01" H 5830 951 50  0000 L CNN
-F 2 "CustomLib:TactileHole" H 5750 1000 50  0001 C CNN
+F 2 "Custom_FP:TactileHole" H 5750 1000 50  0001 C CNN
 F 3 "~" H 5750 1000 50  0001 C CNN
 	1    5750 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 1000 5500 1000
-Wire Wire Line
-	5500 1000 5500 1200
-Connection ~ 5500 1400
-Wire Wire Line
-	5550 1200 5500 1200
-Connection ~ 5500 1200
-Wire Wire Line
-	5500 1200 5500 1400
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J12
 U 1 1 60B5A8A8
 P 6850 1950
-F 0 "J?" H 6930 1992 50  0000 L CNN
+F 0 "J12" H 6930 1992 50  0000 L CNN
 F 1 "Conn_01x01" H 6930 1901 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 6850 1950 50  0001 C CNN
 F 3 "~" H 6850 1950 50  0001 C CNN
@@ -201,10 +176,10 @@ F 3 "~" H 6850 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J13
 U 1 1 60B5A8B2
 P 6850 2150
-F 0 "J?" H 6930 2192 50  0000 L CNN
+F 0 "J13" H 6930 2192 50  0000 L CNN
 F 1 "Conn_01x01" H 6930 2101 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 6850 2150 50  0001 C CNN
 F 3 "~" H 6850 2150 50  0001 C CNN
@@ -212,10 +187,10 @@ F 3 "~" H 6850 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J14
 U 1 1 60B5A8BC
 P 6850 2350
-F 0 "J?" H 6930 2392 50  0000 L CNN
+F 0 "J14" H 6930 2392 50  0000 L CNN
 F 1 "Conn_01x01" H 6930 2301 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 6850 2350 50  0001 C CNN
 F 3 "~" H 6850 2350 50  0001 C CNN
@@ -223,10 +198,10 @@ F 3 "~" H 6850 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J15
 U 1 1 60B5A8C6
 P 6850 2550
-F 0 "J?" H 6930 2592 50  0000 L CNN
+F 0 "J15" H 6930 2592 50  0000 L CNN
 F 1 "Conn_01x01" H 6930 2501 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 6850 2550 50  0001 C CNN
 F 3 "~" H 6850 2550 50  0001 C CNN
@@ -234,10 +209,10 @@ F 3 "~" H 6850 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 60B5A8D0
 P 6550 2700
-F 0 "#PWR?" H 6550 2450 50  0001 C CNN
+F 0 "#PWR0101" H 6550 2450 50  0001 C CNN
 F 1 "GND" H 6555 2527 50  0000 C CNN
 F 2 "" H 6550 2700 50  0001 C CNN
 F 3 "" H 6550 2700 50  0001 C CNN
@@ -264,10 +239,10 @@ Connection ~ 6550 2550
 Wire Wire Line
 	6550 2550 6550 2350
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J16
 U 1 1 60B6200C
 P 7900 1950
-F 0 "J?" H 7980 1992 50  0000 L CNN
+F 0 "J16" H 7980 1992 50  0000 L CNN
 F 1 "Conn_01x01" H 7980 1901 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 7900 1950 50  0001 C CNN
 F 3 "~" H 7900 1950 50  0001 C CNN
@@ -275,10 +250,10 @@ F 3 "~" H 7900 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J17
 U 1 1 60B62016
 P 7900 2150
-F 0 "J?" H 7980 2192 50  0000 L CNN
+F 0 "J17" H 7980 2192 50  0000 L CNN
 F 1 "Conn_01x01" H 7980 2101 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 7900 2150 50  0001 C CNN
 F 3 "~" H 7900 2150 50  0001 C CNN
@@ -286,10 +261,10 @@ F 3 "~" H 7900 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J18
 U 1 1 60B62020
 P 7900 2350
-F 0 "J?" H 7980 2392 50  0000 L CNN
+F 0 "J18" H 7980 2392 50  0000 L CNN
 F 1 "Conn_01x01" H 7980 2301 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 7900 2350 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
@@ -297,10 +272,10 @@ F 3 "~" H 7900 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J19
 U 1 1 60B6202A
 P 7900 2550
-F 0 "J?" H 7980 2592 50  0000 L CNN
+F 0 "J19" H 7980 2592 50  0000 L CNN
 F 1 "Conn_01x01" H 7980 2501 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 7900 2550 50  0001 C CNN
 F 3 "~" H 7900 2550 50  0001 C CNN
@@ -308,10 +283,10 @@ F 3 "~" H 7900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 60B62034
 P 7600 2700
-F 0 "#PWR?" H 7600 2450 50  0001 C CNN
+F 0 "#PWR0102" H 7600 2450 50  0001 C CNN
 F 1 "GND" H 7605 2527 50  0000 C CNN
 F 2 "" H 7600 2700 50  0001 C CNN
 F 3 "" H 7600 2700 50  0001 C CNN
@@ -338,10 +313,10 @@ Connection ~ 7600 2550
 Wire Wire Line
 	7600 2550 7600 2350
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J20
 U 1 1 60B62049
 P 9000 1950
-F 0 "J?" H 9080 1992 50  0000 L CNN
+F 0 "J20" H 9080 1992 50  0000 L CNN
 F 1 "Conn_01x01" H 9080 1901 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 9000 1950 50  0001 C CNN
 F 3 "~" H 9000 1950 50  0001 C CNN
@@ -349,10 +324,10 @@ F 3 "~" H 9000 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J21
 U 1 1 60B62053
 P 9000 2150
-F 0 "J?" H 9080 2192 50  0000 L CNN
+F 0 "J21" H 9080 2192 50  0000 L CNN
 F 1 "Conn_01x01" H 9080 2101 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 9000 2150 50  0001 C CNN
 F 3 "~" H 9000 2150 50  0001 C CNN
@@ -360,10 +335,10 @@ F 3 "~" H 9000 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J22
 U 1 1 60B6205D
 P 9000 2350
-F 0 "J?" H 9080 2392 50  0000 L CNN
+F 0 "J22" H 9080 2392 50  0000 L CNN
 F 1 "Conn_01x01" H 9080 2301 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 9000 2350 50  0001 C CNN
 F 3 "~" H 9000 2350 50  0001 C CNN
@@ -371,10 +346,10 @@ F 3 "~" H 9000 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J23
 U 1 1 60B62067
 P 9000 2550
-F 0 "J?" H 9080 2592 50  0000 L CNN
+F 0 "J23" H 9080 2592 50  0000 L CNN
 F 1 "Conn_01x01" H 9080 2501 50  0000 L CNN
 F 2 "MountingHole:MountingHole_6.2mm_M6" H 9000 2550 50  0001 C CNN
 F 3 "~" H 9000 2550 50  0001 C CNN
@@ -382,10 +357,10 @@ F 3 "~" H 9000 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 60B62071
 P 8700 2700
-F 0 "#PWR?" H 8700 2450 50  0001 C CNN
+F 0 "#PWR0103" H 8700 2450 50  0001 C CNN
 F 1 "GND" H 8705 2527 50  0000 C CNN
 F 2 "" H 8700 2700 50  0001 C CNN
 F 3 "" H 8700 2700 50  0001 C CNN
