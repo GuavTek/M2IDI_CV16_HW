@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 39,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -67,11 +67,11 @@
       39,
       40
     ],
-    "visible_layers": "002ffff_80000001",
+    "visible_layers": "003feff_80000001",
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "MIDI_CV16_Front.kicad_prl",
+    "filename": "MIDI_CV16_IO.kicad_prl",
     "version": 3
   },
   "project": {
