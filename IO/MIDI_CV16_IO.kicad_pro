@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -108,12 +114,12 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.049999999999999996,
+        "min_copper_edge_clearance": 0.127,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
@@ -164,8 +170,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -731,6 +744,70 @@
     [
       "b4fb88b4-e74a-44f4-b908-379aa296a14f",
       ""
+    ],
+    [
+      "cfe6ce98-ceae-4109-9fff-a495bda427b7",
+      "Outputs1"
+    ],
+    [
+      "84c9447b-71c0-48e9-9152-8ce92c49d771",
+      "Outputs2"
+    ],
+    [
+      "bd50a1d9-b725-4d25-8852-89c2a9f3a143",
+      "Outputs3"
+    ],
+    [
+      "38677583-2a10-4260-b3f8-36e6b44d0947",
+      "Outputs4"
+    ],
+    [
+      "18a414e3-dca0-44c9-8333-58a992b31496",
+      "Outputs5"
+    ],
+    [
+      "744d5fd5-51ce-4642-89c8-92fedbea38ed",
+      "Outputs6"
+    ],
+    [
+      "c9a130ca-a4f2-4674-a949-fc0a48f970e4",
+      "Outputs7"
+    ],
+    [
+      "81053a05-6d1d-4340-9d32-5b070d9aea4a",
+      "Outputs8"
+    ],
+    [
+      "64593c4a-728f-4fc5-9a2f-91a98974143c",
+      "Outputs9"
+    ],
+    [
+      "af4eb506-9ea1-4e79-8681-2b08313bd012",
+      "Outputs10"
+    ],
+    [
+      "e4194497-b073-44d3-8699-56b7ad022d44",
+      "Outputs11"
+    ],
+    [
+      "1ba15c8c-a3ca-4c99-b2d5-ad28013f9ab0",
+      "Outputs12"
+    ],
+    [
+      "c7f1c66c-f428-45aa-adbd-f321c52c645b",
+      "Outputs13"
+    ],
+    [
+      "c7619e3b-ba8d-48eb-a973-d89054e6e594",
+      "Outputs14"
+    ],
+    [
+      "262d7b0f-cf32-451a-8448-2e9ef080e29c",
+      "Outputs15"
+    ],
+    [
+      "5e0bd424-4399-4b08-a2ca-9763ca79a24e",
+      "Outputs16"
     ]
   ],
   "text_variables": {}

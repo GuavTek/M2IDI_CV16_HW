@@ -45,11 +45,26 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.39999999999999997
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "clearance|53850000|86375000|ea8b1ad1-31a2-4535-8294-e3e30311c755|6127d6d1-559b-4f66-ab19-99a9bd10fe13",
+        "clearance|54050000|110975000|2fdfd1b0-d43a-4ee1-9211-b0626962e306|6998575a-a8ee-4889-b60f-5b7310183460",
+        "clearance|54150000|87225000|a0ed15f0-1928-449c-b590-253aaa66983c|6127d6d1-559b-4f66-ab19-99a9bd10fe13",
+        "clearance|54350000|111825000|27beed30-b0c0-4ffb-8e4a-711472b30170|6998575a-a8ee-4889-b60f-5b7310183460",
+        "solder_mask_bridge|53850000|86375000|6127d6d1-559b-4f66-ab19-99a9bd10fe13|ea8b1ad1-31a2-4535-8294-e3e30311c755",
+        "solder_mask_bridge|54050000|110975000|6998575a-a8ee-4889-b60f-5b7310183460|2fdfd1b0-d43a-4ee1-9211-b0626962e306",
+        "solder_mask_bridge|54150000|87225000|6127d6d1-559b-4f66-ab19-99a9bd10fe13|a0ed15f0-1928-449c-b590-253aaa66983c",
+        "solder_mask_bridge|54350000|111825000|6998575a-a8ee-4889-b60f-5b7310183460|27beed30-b0c0-4ffb-8e4a-711472b30170"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -108,19 +123,19 @@
       "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.024999999999999998,
-        "min_hole_clearance": 0.25,
+        "min_copper_edge_clearance": 0.127,
+        "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_to_copper_clearance": 0.0,
@@ -168,9 +183,19 @@
       ],
       "track_widths": [
         0.0,
-        0.2
+        0.2,
+        0.5
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -404,16 +429,50 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.5,
+        "microvia_drill": 0.3,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.5,
+        "microvia_drill": 0.3,
+        "name": "Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.5,
+        "microvia_drill": 0.3,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -442,19 +501,19 @@
         "pattern": "-VDC"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "Butt1"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "Butt2"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "Butt3"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "CAN_INT"
       },
       {
@@ -462,55 +521,55 @@
         "pattern": "GND"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC1"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC2"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC3"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC4"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC5"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC6"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC7"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDC8"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDR1"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDR2"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDR3"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDR4"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "LEDR5"
       },
       {
@@ -522,15 +581,15 @@
         "pattern": "MIDIBUS-"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "MUX_A"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "MUX_B"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "MUX_INH"
       },
       {
@@ -850,55 +909,39 @@
         "pattern": "Net-(U13-Pad2)"
       },
       {
-        "netclass": "Default",
-        "pattern": "PWM1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "PWM2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "PWM3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "PWM4"
-      },
-      {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "RESET"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SPI_MISO"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SPI_MOSI"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SPI_SCK"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SPI_SS"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SWCLK"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "SWDIO"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "USB_D+"
       },
       {
-        "netclass": "Default",
+        "netclass": "Data",
         "pattern": "USB_D-"
       },
       {
@@ -965,6 +1008,10 @@
     [
       "00000000-0000-0000-0000-000060750bb0",
       "Powah"
+    ],
+    [
+      "f58cfc93-0892-4036-8f05-b10b72ca44d6",
+      "Outputs"
     ]
   ],
   "text_variables": {}
