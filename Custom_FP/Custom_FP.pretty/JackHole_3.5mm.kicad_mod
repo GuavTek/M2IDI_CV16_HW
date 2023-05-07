@@ -1,0 +1,13 @@
+(footprint "JackHole_3.5mm" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 6.8 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 0dcb4647-af23-4bc1-85fc-b03d9e84e586)
+  )
+  (fp_text value "JackHole_3.5mm" (at 0 5.6 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp dbeed406-f53d-4a6b-a265-cad07195e262)
+  )
+  (pad "1" thru_hole circle (at 0 0) (size 7.6 7.6) (drill 6.2) (layers "*.Cu" "*.Mask") (tstamp f8bc09c1-6bb3-4685-9bf1-773824a3ab7e))
+)
