@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "M2IDI - CV16 IO")
+    (date "2023-05-10")
+    (rev "3.0")
+    (company "GuavTek")
+  )
+
   (lib_symbols
     (symbol "Connector_Audio:AudioJack2_SwitchT" (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 8.89 0)
@@ -911,7 +918,7 @@
     (property "Reference" "D7" (at 153.924 115.4343 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LED_Dual_AAKK" (at 153.924 117.3553 90)
+    (property "Value" "LTST-C195TGKRKT" (at 153.924 117.3553 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Custom_FP:LED_LiteOn_LTST-C195TGKRKT" (at 146.685 116.967 0)
@@ -2055,7 +2062,7 @@
     (property "Reference" "H3" (at 179.705 116.8313 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MountingHole" (at 179.705 118.7523 0)
+    (property "Value" "VLP lightpipe" (at 179.705 118.7523 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Custom_FP:VLP-LightPipes" (at 177.165 117.475 0)

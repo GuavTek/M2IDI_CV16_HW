@@ -6,7 +6,7 @@
 
   (title_block
     (title "M2IDI - CV16 CORE")
-    (date "2023-04-22")
+    (date "2023-05-10")
     (rev "3.0")
     (company "GuavTek")
   )
@@ -3796,7 +3796,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 257.556 147.828 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 255.6002 150.495 0)
       (effects (font (size 1.27 1.27)) hide)

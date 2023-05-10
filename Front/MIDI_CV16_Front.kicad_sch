@@ -2,11 +2,11 @@
 
   (uuid f5a177ef-f3af-4bee-ac23-050156f8fb6f)
 
-  (paper "A3")
+  (paper "A4")
 
   (title_block
     (title "M2IDI - CV16 FRONT")
-    (date "2023-04-19")
+    (date "2023-05-10")
     (rev "3.0")
     (company "GuavTek")
   )
