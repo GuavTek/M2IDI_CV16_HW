@@ -4972,7 +4972,7 @@
     (property "Value" "ECS-120-18-33-JGN-TR3" (at 90.17 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" (at 85.725 139.065 0)
+    (property "Footprint" "Custom_FP:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" (at 85.725 139.065 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 85.725 139.065 0)
