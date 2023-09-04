@@ -1,3 +1,4 @@
+This eurorack module has 16 general purpose outputs which can be used for: CV, gates, envelopes, LFOs+++. 
 View this project on [CADLAB.io](https://cadlab.io/project/25235) to see renders of schematics and PCBs, as well as current issues. 
 
 <h2> A part of the M2IDI prototypes </h2>
