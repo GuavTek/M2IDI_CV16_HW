@@ -2839,10 +2839,10 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "SPI_MOSI" (shape input) (at 65.405 221.615 180) (fields_autoplaced)
+  (global_label "DAC_MOSI" (shape input) (at 65.405 221.615 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 534d31eb-4766-4f0e-bea8-03c5f02818c3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 54.5053 221.615 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 53.8816 221.615 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2888,10 +2888,10 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "SPI_SCK" (shape input) (at 65.405 224.155 180) (fields_autoplaced)
+  (global_label "DAC_SCK" (shape input) (at 65.405 224.155 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d052a27a-60e0-45ba-8490-1056e0aa9152)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 55.352 224.155 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 54.7283 224.155 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2899,7 +2899,7 @@
   (symbol (lib_id "Device:R") (at 338.455 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0245eeb0-e64c-4ecc-8016-9dbdee9fb538)
-    (property "Reference" "R32" (at 338.455 34.29 90)
+    (property "Reference" "R35" (at 338.455 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 36.83 90)
@@ -2915,9 +2915,6 @@
     (pin "2" (uuid 251ca593-3b2f-4b93-87ad-4b43e07097a9))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R32") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R35") (unit 1)
         )
@@ -2978,7 +2975,7 @@
   (symbol (lib_id "power:GND") (at 316.865 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07f1c6e8-9fe7-473d-9ae5-8b8be32400be)
-    (property "Reference" "#PWR0116" (at 316.865 163.83 0)
+    (property "Reference" "#PWR039" (at 316.865 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 161.8742 0)
@@ -2993,9 +2990,6 @@
     (pin "1" (uuid 8be1850d-cf30-4df9-bcad-bf7627ba62a1))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0116") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR039") (unit 1)
         )
@@ -3006,7 +3000,7 @@
   (symbol (lib_id "Device:R") (at 338.455 205.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09cd4d9f-9e11-460c-b446-6ae4610f99a2)
-    (property "Reference" "R47" (at 338.455 203.2 90)
+    (property "Reference" "R49" (at 338.455 203.2 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 205.74 90)
@@ -3022,9 +3016,6 @@
     (pin "2" (uuid bf8ea2c3-f209-457c-b671-332404840180))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R47") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R49") (unit 1)
         )
@@ -3091,9 +3082,6 @@
     (pin "2" (uuid 878a52d4-92bd-4aa9-97e6-eab1073f7f4f))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R27") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R27") (unit 1)
         )
@@ -3120,9 +3108,6 @@
     (pin "2" (uuid d1f17a21-2999-4ef8-bb6f-83c586baea0b))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C15") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C15") (unit 1)
         )
@@ -3133,7 +3118,7 @@
   (symbol (lib_id "power:GND") (at 230.505 130.81 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 186737ba-745f-44da-822d-f04f7dc2a3d8)
-    (property "Reference" "#PWR0101" (at 224.155 130.81 0)
+    (property "Reference" "#PWR031" (at 224.155 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.2538 130.937 90)
@@ -3148,9 +3133,6 @@
     (pin "1" (uuid c3e7d16f-892d-4f14-9c21-a3c91cfaebee))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0101") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR031") (unit 1)
         )
@@ -3203,9 +3185,6 @@
     (pin "2" (uuid 387fb51d-185d-4d22-b17b-a29897b42b07))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R26") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R26") (unit 1)
         )
@@ -3232,9 +3211,6 @@
     (pin "2" (uuid bda284fa-1d00-409c-b1f2-160013da067b))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C9") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C9") (unit 1)
         )
@@ -3248,10 +3224,10 @@
     (property "Reference" "U8" (at 288.925 164.3126 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "MC74LVXT4052" (at 288.925 166.624 0)
+    (property "Value" "TMUX1309" (at 288.925 166.624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 292.735 205.74 0)
+    (property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" (at 292.735 205.74 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "https://no.mouser.com/datasheet/2/308/1/MC74LVXT4052_D-2315524.pdf" (at 288.417 181.61 0)
@@ -3275,9 +3251,6 @@
     (pin "9" (uuid 83096bcf-59ef-4d16-b0c6-fac7cd0b60c7))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U8") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U8") (unit 1)
         )
@@ -3304,9 +3277,6 @@
     (pin "2" (uuid b1fb0d40-5d2c-4c2c-9d11-d9cb5b26ccdb))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C22") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C22") (unit 1)
         )
@@ -3339,9 +3309,6 @@
     (pin "8" (uuid 43201870-a8b9-4b90-ac6f-3372dd6195ef))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U7") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U7") (unit 2)
         )
@@ -3402,7 +3369,7 @@
   (symbol (lib_id "power:GND") (at 316.865 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26df87a9-2ee6-42df-8ba0-b70492aadd38)
-    (property "Reference" "#PWR0122" (at 316.865 115.57 0)
+    (property "Reference" "#PWR037" (at 316.865 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 113.6142 0)
@@ -3417,9 +3384,6 @@
     (pin "1" (uuid e9732088-af3c-422f-a0bb-dbb86bf6245e))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0122") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR037") (unit 1)
         )
@@ -3455,7 +3419,7 @@
   (symbol (lib_id "power:GND") (at 316.865 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2cae3a8c-a9ef-44fe-9d0d-0568cbf7f598)
-    (property "Reference" "#PWR0113" (at 316.865 187.96 0)
+    (property "Reference" "#PWR040" (at 316.865 187.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 186.0042 0)
@@ -3470,9 +3434,6 @@
     (pin "1" (uuid 17368f4e-fbf2-4ef4-a28c-f3288d7bc34c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0113") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR040") (unit 1)
         )
@@ -3499,9 +3460,6 @@
     (pin "2" (uuid 1fb194d3-cdb4-4c8f-b8e8-74d6ed9ccc1d))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C11") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C11") (unit 1)
         )
@@ -3578,9 +3536,6 @@
     (pin "2" (uuid 1b731175-f6b4-4ce6-be0b-678d9061b400))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C13") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C13") (unit 1)
         )
@@ -3657,9 +3612,6 @@
     (pin "2" (uuid 36aa15fb-b3d2-47ba-af2b-2be9ea6ca17e))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C17") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C17") (unit 1)
         )
@@ -3670,7 +3622,7 @@
   (symbol (lib_id "power:GND") (at 168.91 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33d4f936-6a22-431f-bd35-09b4a090ec8c)
-    (property "Reference" "#PWR0154" (at 168.91 67.31 0)
+    (property "Reference" "#PWR06" (at 168.91 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 65.3542 0)
@@ -3685,9 +3637,6 @@
     (pin "1" (uuid a557f753-233f-4f3f-8710-113f2dc4e174))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0154") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR06") (unit 1)
         )
@@ -3698,7 +3647,7 @@
   (symbol (lib_id "Device:R") (at 338.455 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3588e7f5-75b2-494b-96b0-c8764f0ee647)
-    (property "Reference" "R39" (at 338.455 106.68 90)
+    (property "Reference" "R41" (at 338.455 106.68 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 109.22 90)
@@ -3714,9 +3663,6 @@
     (pin "2" (uuid c5ce73d0-c448-4821-83d7-00515573e0c0))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R39") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R41") (unit 1)
         )
@@ -3749,9 +3695,6 @@
     (pin "8" (uuid a0ae2cec-b722-4258-a92f-32bd7002edae))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U12") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U12") (unit 2)
         )
@@ -3762,7 +3705,7 @@
   (symbol (lib_id "power:GND") (at 168.91 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3886fd05-1bf0-43a9-bb48-a43235b61206)
-    (property "Reference" "#PWR0142" (at 168.91 163.83 0)
+    (property "Reference" "#PWR011" (at 168.91 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 161.8742 0)
@@ -3777,9 +3720,6 @@
     (pin "1" (uuid e676ba03-6e6e-4472-92b3-0ecfd58d1578))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0142") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR011") (unit 1)
         )
@@ -3790,7 +3730,7 @@
   (symbol (lib_id "Device:R") (at 354.965 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3bd6ca11-ce6a-4824-8066-c0c63fdc2069)
-    (property "Reference" "R50" (at 354.965 58.42 90)
+    (property "Reference" "R52" (at 354.965 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 354.965 60.96 90)
@@ -3806,9 +3746,6 @@
     (pin "2" (uuid b94881ef-0604-4bf1-aa05-3e167b55f1cd))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R50") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R52") (unit 1)
         )
@@ -3819,7 +3756,7 @@
   (symbol (lib_id "Device:R") (at 354.965 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c43aa96-8b38-432d-99dd-694cc3616e63)
-    (property "Reference" "R49" (at 354.965 34.29 90)
+    (property "Reference" "R51" (at 354.965 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 354.965 36.83 90)
@@ -3835,9 +3772,6 @@
     (pin "2" (uuid 6fa556ee-2631-4e44-8d5e-5fd43565ed6d))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R49") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R51") (unit 1)
         )
@@ -3848,7 +3782,7 @@
   (symbol (lib_id "power:GND") (at 168.91 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3da223fa-7bfe-4f17-92f4-b03f1762038a)
-    (property "Reference" "#PWR0151" (at 168.91 91.44 0)
+    (property "Reference" "#PWR08" (at 168.91 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 89.4842 0)
@@ -3863,9 +3797,6 @@
     (pin "1" (uuid d3407561-9037-4e9f-a988-b9b3b16b1912))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0151") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR08") (unit 1)
         )
@@ -3898,9 +3829,6 @@
     (pin "8" (uuid 3cf3ccf6-07db-46cd-bbc2-39e338cdd78a))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U12") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U12") (unit 1)
         )
@@ -3952,9 +3880,6 @@
     (pin "2" (uuid e12ae13b-cefc-4e5b-9c5e-86e6e1c27de0))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R30") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R30") (unit 1)
         )
@@ -3987,9 +3912,6 @@
     (pin "8" (uuid 8b64ab90-8f5c-4440-809d-afd40c23b8d0))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U5") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U5") (unit 1)
         )
@@ -4022,9 +3944,6 @@
     (pin "8" (uuid ae078e97-771d-44f8-abd4-de631090a6c4))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U11") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U11") (unit 2)
         )
@@ -4057,9 +3976,6 @@
     (pin "8" (uuid d799206f-1867-461f-a33a-d9acd9f52ddc))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U5") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U5") (unit 2)
         )
@@ -4094,9 +4010,6 @@
     (pin "9" (uuid 656b8927-b8dc-4208-87e3-c7296f887714))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "J7") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "J7") (unit 1)
         )
@@ -4107,7 +4020,7 @@
   (symbol (lib_id "power:GND") (at 168.91 205.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 524197a5-493b-45e7-a460-88d28a51462e)
-    (property "Reference" "#PWR0134" (at 168.91 212.09 0)
+    (property "Reference" "#PWR013" (at 168.91 212.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 210.1342 0)
@@ -4122,9 +4035,6 @@
     (pin "1" (uuid 238db93b-02a6-4661-b609-1aca906e810b))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0134") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR013") (unit 1)
         )
@@ -4151,9 +4061,6 @@
     (pin "2" (uuid 9c65ccc2-8c15-4304-b4c0-59b4f1190714))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C4") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C4") (unit 1)
         )
@@ -4164,7 +4071,7 @@
   (symbol (lib_id "power:GND") (at 168.91 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d285f78-c072-45fb-a295-c50ae030d14d)
-    (property "Reference" "#PWR0148" (at 168.91 115.57 0)
+    (property "Reference" "#PWR09" (at 168.91 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 113.6142 0)
@@ -4179,9 +4086,6 @@
     (pin "1" (uuid b0d62a97-a35b-4c11-8f3d-06e168ab38b4))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0148") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR09") (unit 1)
         )
@@ -4208,9 +4112,6 @@
     (pin "2" (uuid 92c0c124-1293-4b6c-ad5f-435dca703c03))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R31") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R31") (unit 1)
         )
@@ -4243,9 +4144,6 @@
     (pin "8" (uuid 4facdd2a-e0b5-4996-9b70-b3396264b220))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U10") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U10") (unit 2)
         )
@@ -4272,9 +4170,6 @@
     (pin "2" (uuid 5f017ecf-c3a9-4d59-ad61-47ad91652a09))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C14") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C14") (unit 1)
         )
@@ -4326,9 +4221,6 @@
     (pin "2" (uuid 9985ecfc-b394-4954-8d01-620e89639432))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R29") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R29") (unit 1)
         )
@@ -4339,7 +4231,7 @@
   (symbol (lib_id "Device:R") (at 191.135 85.09 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6df5134b-9880-40c5-8de1-a7df75607e78)
-    (property "Reference" "R9" (at 191.135 82.55 90)
+    (property "Reference" "R11" (at 191.135 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 85.09 90)
@@ -4355,9 +4247,6 @@
     (pin "2" (uuid 2a249684-9b1b-444b-baec-b145d5a9f20d))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R9") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R11") (unit 1)
         )
@@ -4384,9 +4273,6 @@
     (pin "2" (uuid a3f400d3-8ef7-48b9-b092-323ec7bc77bd))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R57") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R57") (unit 1)
         )
@@ -4413,9 +4299,6 @@
     (pin "2" (uuid 87a6cd2e-0111-400c-9d00-0ba48f459d92))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C7") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C7") (unit 1)
         )
@@ -4467,9 +4350,6 @@
     (pin "2" (uuid 9bf10c25-8495-4db8-a567-a968da404e2d))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R19") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R19") (unit 1)
         )
@@ -4480,7 +4360,7 @@
   (symbol (lib_id "power:GND") (at 316.865 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73acec66-035b-415e-b0dd-83d616ce1a41)
-    (property "Reference" "#PWR0119" (at 316.865 139.7 0)
+    (property "Reference" "#PWR038" (at 316.865 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 137.7442 0)
@@ -4495,9 +4375,6 @@
     (pin "1" (uuid 4e1e5795-f5a8-46e3-b377-0c692b35e8b8))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0119") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR038") (unit 1)
         )
@@ -4558,7 +4435,7 @@
   (symbol (lib_id "power:GND") (at 288.925 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75d8acc8-ddfc-46f2-848c-99ea686aaf59)
-    (property "Reference" "#PWR0109" (at 288.925 214.63 0)
+    (property "Reference" "#PWR032" (at 288.925 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 289.052 212.6742 0)
@@ -4573,9 +4450,6 @@
     (pin "1" (uuid 9d23a1b9-c913-4e27-8fcf-68dcc3772217))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0109") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR032") (unit 1)
         )
@@ -4608,9 +4482,6 @@
     (pin "8" (uuid 64b4433c-8ee9-448e-a47e-ac3fee5ed221))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U7") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U7") (unit 1)
         )
@@ -4621,7 +4492,7 @@
   (symbol (lib_id "power:GND") (at 140.97 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c23f9b6-ecb1-40a7-9b0f-768fcb0eb629)
-    (property "Reference" "#PWR0135" (at 140.97 214.63 0)
+    (property "Reference" "#PWR02" (at 140.97 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 141.097 212.6742 0)
@@ -4636,9 +4507,6 @@
     (pin "1" (uuid 14eaeb38-6c29-4696-9d83-81b0fb22a97c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0135") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR02") (unit 1)
         )
@@ -4671,9 +4539,6 @@
     (pin "8" (uuid a2457c6f-d6fe-4a41-926d-edda3f007745))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U11") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U11") (unit 1)
         )
@@ -4700,9 +4565,6 @@
     (pin "2" (uuid 51a7c560-4e55-4d46-a00a-67a08998df7a))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R58") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R58") (unit 1)
         )
@@ -4713,7 +4575,7 @@
   (symbol (lib_id "Device:R") (at 191.135 133.35 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8679b95c-3dce-4aed-a454-6cb383ea43d2)
-    (property "Reference" "R14" (at 191.135 130.81 90)
+    (property "Reference" "R15" (at 191.135 130.81 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 133.35 90)
@@ -4729,9 +4591,6 @@
     (pin "2" (uuid 9649b48e-09f7-4df5-ad81-a54cc68ba7df))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R14") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R15") (unit 1)
         )
@@ -4742,7 +4601,7 @@
   (symbol (lib_id "Device:R") (at 191.135 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a74a320-3555-480d-9bae-a4696c9b3cb3)
-    (property "Reference" "R5" (at 191.135 34.29 90)
+    (property "Reference" "R7" (at 191.135 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 36.83 90)
@@ -4758,9 +4617,6 @@
     (pin "2" (uuid fba93bc1-080e-4666-970a-44838ef9bb98))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R5") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R7") (unit 1)
         )
@@ -4787,9 +4643,6 @@
     (pin "2" (uuid 1548cce5-d50d-4819-8621-9e53745ad2d7))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R56") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R56") (unit 1)
         )
@@ -4841,9 +4694,6 @@
     (pin "2" (uuid eddb12ec-303c-4835-990d-e3e997e15928))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C23") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C23") (unit 1)
         )
@@ -4920,9 +4770,6 @@
     (pin "2" (uuid e1ae66bf-7406-401f-a446-dd14fadd3be8))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C24") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C24") (unit 1)
         )
@@ -4949,9 +4796,6 @@
     (pin "2" (uuid 592ebf36-6f85-411a-8fb7-e5489597dadb))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C19") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C19") (unit 1)
         )
@@ -4984,9 +4828,6 @@
     (pin "8" (uuid f0a915ab-d3e1-42be-8780-d3b22a9c4bcf))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U4") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U4") (unit 2)
         )
@@ -5044,9 +4885,6 @@
     (pin "8" (uuid dddee80d-b0c2-4f63-8002-5bf1baab5349))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U9") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U9") (unit 1)
         )
@@ -5057,7 +4895,7 @@
   (symbol (lib_id "power:GND") (at 168.91 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9de6dcc3-b29d-4096-be86-16d6e0098800)
-    (property "Reference" "#PWR0139" (at 168.91 187.96 0)
+    (property "Reference" "#PWR012" (at 168.91 187.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 186.0042 0)
@@ -5072,9 +4910,6 @@
     (pin "1" (uuid 72444e4a-90cb-42a0-8acc-425e6575babf))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0139") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR012") (unit 1)
         )
@@ -5085,7 +4920,7 @@
   (symbol (lib_id "power:GND") (at 316.865 205.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e9c572d-29d5-42fb-8420-b0ba0e505466)
-    (property "Reference" "#PWR0108" (at 316.865 212.09 0)
+    (property "Reference" "#PWR041" (at 316.865 212.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 210.1342 0)
@@ -5100,9 +4935,6 @@
     (pin "1" (uuid 148dcd01-6708-4bab-acd5-fa71b879fcf7))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0108") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR041") (unit 1)
         )
@@ -5135,9 +4967,6 @@
     (pin "8" (uuid b424c507-bc3a-4e5b-96b3-bf31c4b0cfc1))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U4") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U4") (unit 1)
         )
@@ -5164,9 +4993,6 @@
     (pin "2" (uuid 0640e911-5392-4dea-826d-4630cc298f0c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C20") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C20") (unit 1)
         )
@@ -5204,7 +5030,7 @@
   (symbol (lib_id "power:GND") (at 380.365 106.68 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b17e0443-70fc-45c6-bf06-898587c26d56)
-    (property "Reference" "#PWR0103" (at 374.015 106.68 0)
+    (property "Reference" "#PWR058" (at 374.015 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 377.1138 106.807 90)
@@ -5219,9 +5045,6 @@
     (pin "1" (uuid 8f05fbee-b495-4983-8998-bfff53a7c1e5))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0103") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR058") (unit 1)
         )
@@ -5248,9 +5071,6 @@
     (pin "2" (uuid 02a0814d-6457-4537-b573-a69405e15801))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C18") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C18") (unit 1)
         )
@@ -5261,7 +5081,7 @@
   (symbol (lib_id "power:GND") (at 316.865 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b2a8d33f-15bd-4510-a83a-79ae7840a09f)
-    (property "Reference" "#PWR0128" (at 316.865 67.31 0)
+    (property "Reference" "#PWR035" (at 316.865 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 65.3542 0)
@@ -5276,9 +5096,6 @@
     (pin "1" (uuid dc66d2ff-7d7d-4ec4-be0a-0ed17383d11e))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0128") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR035") (unit 1)
         )
@@ -5305,9 +5122,6 @@
     (pin "2" (uuid 5f357cac-fb80-43ec-8003-969e2e1790c1))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R55") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R55") (unit 1)
         )
@@ -5318,7 +5132,7 @@
   (symbol (lib_id "Device:R") (at 338.455 157.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b603bf47-a96c-48a5-9713-5767063ed44b)
-    (property "Reference" "R43" (at 338.455 154.94 90)
+    (property "Reference" "R45" (at 338.455 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 157.48 90)
@@ -5334,9 +5148,6 @@
     (pin "2" (uuid 38d8fcc6-9746-421c-a69a-54f57967086c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R43") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R45") (unit 1)
         )
@@ -5422,7 +5233,7 @@
   (symbol (lib_id "Device:R") (at 207.645 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid baef4d1b-e891-488d-871f-d17bdf99ac79)
-    (property "Reference" "R22" (at 207.645 34.29 90)
+    (property "Reference" "R23" (at 207.645 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 207.645 36.83 90)
@@ -5438,9 +5249,6 @@
     (pin "2" (uuid 8ba359d6-5b77-4a42-8263-c58ca6e9d0ee))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R22") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R23") (unit 1)
         )
@@ -5473,9 +5281,6 @@
     (pin "8" (uuid 36aa7f50-1855-4ee2-af84-b744f29957e2))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U10") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U10") (unit 1)
         )
@@ -5511,7 +5316,7 @@
   (symbol (lib_id "Device:R") (at 338.455 85.09 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be4cc342-2b93-4ec7-913a-d3250a6aa4dd)
-    (property "Reference" "R37" (at 338.455 82.55 90)
+    (property "Reference" "R39" (at 338.455 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 85.09 90)
@@ -5527,9 +5332,6 @@
     (pin "2" (uuid 38eb94a4-7c9c-46b7-bf62-e92149030344))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R37") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R39") (unit 1)
         )
@@ -5540,7 +5342,7 @@
   (symbol (lib_id "power:GND") (at 316.865 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf0b538a-643b-4dca-9509-2821f365b7a8)
-    (property "Reference" "#PWR0125" (at 316.865 91.44 0)
+    (property "Reference" "#PWR036" (at 316.865 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 89.4842 0)
@@ -5555,9 +5357,6 @@
     (pin "1" (uuid c12e13f4-a0aa-4c28-8702-8d85fcfefff7))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0125") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR036") (unit 1)
         )
@@ -5590,9 +5389,6 @@
     (pin "8" (uuid 9975b500-7dc9-496e-83d7-738a47cc25e0))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U6") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U6") (unit 1)
         )
@@ -5603,7 +5399,7 @@
   (symbol (lib_id "Device:R") (at 338.455 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c31498a9-5994-4c00-aa1d-efed8274df66)
-    (property "Reference" "R34" (at 338.455 58.42 90)
+    (property "Reference" "R37" (at 338.455 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 60.96 90)
@@ -5619,9 +5415,6 @@
     (pin "2" (uuid ce3da72d-0817-417c-8d06-55cb2a992b66))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R34") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R37") (unit 1)
         )
@@ -5648,9 +5441,6 @@
     (pin "2" (uuid 9b9f029b-ff6b-4fd7-8b12-771e17040720))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R54") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R54") (unit 1)
         )
@@ -5686,7 +5476,7 @@
   (symbol (lib_id "power:GND") (at 380.365 129.54 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9a6418d-7e14-4989-bd1c-6309bc821ce5)
-    (property "Reference" "#PWR0191" (at 374.015 129.54 0)
+    (property "Reference" "#PWR059" (at 374.015 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 377.1138 129.667 90)
@@ -5701,9 +5491,6 @@
     (pin "1" (uuid 5c1a81f8-02dc-4322-9c97-39b2b8e53d38))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0191") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR059") (unit 1)
         )
@@ -5714,7 +5501,7 @@
   (symbol (lib_id "Device:R") (at 338.455 181.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca24ab97-d153-48f5-a2ff-035f0ec074de)
-    (property "Reference" "R45" (at 338.455 179.07 90)
+    (property "Reference" "R47" (at 338.455 179.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 181.61 90)
@@ -5730,9 +5517,6 @@
     (pin "2" (uuid 5d85c234-83f0-4e56-ac9b-31db3fd04804))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R45") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R47") (unit 1)
         )
@@ -5765,9 +5549,6 @@
     (pin "8" (uuid 0bbe57c1-04ac-48bb-b063-17a7af24c14b))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U9") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U9") (unit 2)
         )
@@ -5778,7 +5559,7 @@
   (symbol (lib_id "Device:R") (at 191.135 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d18a70da-5a02-457d-a4f2-4890e22817f8)
-    (property "Reference" "R7" (at 191.135 58.42 90)
+    (property "Reference" "R9" (at 191.135 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 60.96 90)
@@ -5794,9 +5575,6 @@
     (pin "2" (uuid 11ac2dc8-0147-43ff-a8ed-edad58bb4cfa))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R7") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R9") (unit 1)
         )
@@ -5875,9 +5653,6 @@
     (pin "2" (uuid e3b9918e-11e7-4ea2-9eb5-10913d61b3f3))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R17") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R17") (unit 1)
         )
@@ -5888,7 +5663,7 @@
   (symbol (lib_id "Device:R") (at 191.135 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d947565d-b6af-4e6b-bc61-c50fe1e932b1)
-    (property "Reference" "R11" (at 191.135 106.68 90)
+    (property "Reference" "R13" (at 191.135 106.68 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 109.22 90)
@@ -5904,9 +5679,6 @@
     (pin "2" (uuid 75d5bb9d-a3ad-403f-b5e6-ff9635a81e29))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R11") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R13") (unit 1)
         )
@@ -5917,7 +5689,7 @@
   (symbol (lib_id "Device:R") (at 207.645 205.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d96ce557-48d1-486b-be98-5db1d5fa671f)
-    (property "Reference" "R35" (at 207.645 203.2 90)
+    (property "Reference" "R32" (at 207.645 203.2 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 207.645 205.74 90)
@@ -5933,9 +5705,6 @@
     (pin "2" (uuid 64f66f9a-3edc-4186-8f1a-fc1ec4502ce4))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R35") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R32") (unit 1)
         )
@@ -5946,7 +5715,7 @@
   (symbol (lib_id "power:GND") (at 168.91 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid da84d5fb-8a89-43a7-a48c-5e3ada5efa64)
-    (property "Reference" "#PWR0145" (at 168.91 139.7 0)
+    (property "Reference" "#PWR010" (at 168.91 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 137.7442 0)
@@ -5961,9 +5730,6 @@
     (pin "1" (uuid 188634a7-c3a3-456e-bbfe-67bf4e4362b0))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0145") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR010") (unit 1)
         )
@@ -5974,7 +5740,7 @@
   (symbol (lib_id "power:GND") (at 316.865 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ddd70f2d-870c-48b4-a609-24c38a9fbd50)
-    (property "Reference" "#PWR0131" (at 316.865 43.18 0)
+    (property "Reference" "#PWR034" (at 316.865 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 316.992 41.2242 0)
@@ -5989,9 +5755,6 @@
     (pin "1" (uuid fe6dca3f-7dd7-42c9-9706-4b97a95d424c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0131") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR034") (unit 1)
         )
@@ -6043,9 +5806,6 @@
     (pin "2" (uuid 2b7b85db-2d12-4520-b1ea-0f06b95c5061))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R53") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R53") (unit 1)
         )
@@ -6056,7 +5816,7 @@
   (symbol (lib_id "Device:R") (at 191.135 205.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4ee164f-aad9-44c4-b769-9d257946c0e2)
-    (property "Reference" "R25" (at 191.135 203.2 90)
+    (property "Reference" "R21" (at 191.135 203.2 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 191.135 205.74 90)
@@ -6072,9 +5832,6 @@
     (pin "2" (uuid 83666218-85eb-4367-8a27-ff80998b6270))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R25") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R21") (unit 1)
         )
@@ -6107,9 +5864,6 @@
     (pin "8" (uuid 79c4e21a-e665-49ca-981f-5a7c85d8dddf))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U6") (unit 2)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U6") (unit 2)
         )
@@ -6136,9 +5890,6 @@
     (pin "2" (uuid 4d582a20-9c25-4bab-b66e-42a547b52360))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C6") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C6") (unit 1)
         )
@@ -6174,7 +5925,7 @@
   (symbol (lib_id "Device:R") (at 207.645 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f624e4c0-11e3-44d3-8820-79d300fffc46)
-    (property "Reference" "R23" (at 207.645 58.42 90)
+    (property "Reference" "R25" (at 207.645 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 207.645 60.96 90)
@@ -6190,9 +5941,6 @@
     (pin "2" (uuid 32c2f4e9-9fc9-4fe4-a987-d66941250d3c))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R23") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R25") (unit 1)
         )
@@ -6203,7 +5951,7 @@
   (symbol (lib_id "Device:R") (at 338.455 133.35 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6713bd1-8e5b-4f3a-a653-3b567fd8b3b7)
-    (property "Reference" "R41" (at 338.455 130.81 90)
+    (property "Reference" "R43" (at 338.455 130.81 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 338.455 133.35 90)
@@ -6219,9 +5967,6 @@
     (pin "2" (uuid db355f3b-a72f-4630-80de-e1b354763133))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "R41") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "R43") (unit 1)
         )
@@ -6232,7 +5977,7 @@
   (symbol (lib_id "power:GND") (at 168.91 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7914001-3337-4d8a-9f2b-546dccb41770)
-    (property "Reference" "#PWR0157" (at 168.91 43.18 0)
+    (property "Reference" "#PWR05" (at 168.91 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.037 41.2242 0)
@@ -6247,9 +5992,6 @@
     (pin "1" (uuid 9e6ec8be-d26c-4c52-b362-dcc7b18c6609))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "#PWR0157") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "#PWR05") (unit 1)
         )
@@ -6326,9 +6068,6 @@
     (pin "2" (uuid 588ff824-18e6-437a-b7d8-48ae23058f0e))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "C21") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "C21") (unit 1)
         )
@@ -6363,9 +6102,6 @@
     (pin "9" (uuid b9bad7d5-667e-4192-9f45-9823152bd374))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "J3") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "J3") (unit 1)
         )
@@ -6379,10 +6115,10 @@
     (property "Reference" "U2" (at 140.97 164.3126 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "MC74LVXT4052" (at 140.97 166.624 0)
+    (property "Value" "TMUX1309" (at 140.97 166.624 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 144.78 205.74 0)
+    (property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" (at 144.78 205.74 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "https://no.mouser.com/datasheet/2/308/1/MC74LVXT4052_D-2315524.pdf" (at 140.462 181.61 0)
@@ -6406,9 +6142,6 @@
     (pin "9" (uuid 9bc84d28-0409-44b5-aa78-872c1fb84795))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "U2") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
           (reference "U2") (unit 1)
         )

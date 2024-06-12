@@ -1460,9 +1460,6 @@
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/00000000-0000-0000-0000-000060fc835e"
           (reference "J8") (unit 1)
         )
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "J?") (unit 1)
-        )
       )
     )
   )
@@ -1496,9 +1493,6 @@
       (project "MIDI_CV16"
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/00000000-0000-0000-0000-000060fc835e"
           (reference "J4") (unit 1)
-        )
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "J?") (unit 1)
         )
       )
     )
@@ -1891,9 +1885,6 @@
     (pin "3" (uuid 2fe3cc8e-9d49-4ed3-8daa-54c4ca1000e3))
     (instances
       (project "MIDI_CV16"
-        (path "/ba515087-2175-44fd-acc2-0e447df6195b"
-          (reference "RV1") (unit 1)
-        )
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/00000000-0000-0000-0000-000060fc835e"
           (reference "RV1") (unit 1)
         )
