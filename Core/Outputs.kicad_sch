@@ -6,8 +6,8 @@
 
   (title_block
     (title "M2IDI - CV16 CORE")
-    (date "2023-05-10")
-    (rev "3.0")
+    (date "2024-06-12")
+    (rev "3.1")
     (company "GuavTek")
   )
 
@@ -3780,8 +3780,8 @@
     (property "Datasheet" "~" (at 108.585 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 2a3c1fa1-3e72-4c0d-b562-6d354f1ae2a5))
     (pin "1" (uuid 1c4edb32-7b51-4847-97af-679658193ea9))
+    (pin "2" (uuid 2a3c1fa1-3e72-4c0d-b562-6d354f1ae2a5))
     (instances
       (project "MIDI_CV16"
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
@@ -5739,8 +5739,8 @@
     (property "Datasheet" "~" (at 255.27 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid d210869d-9e0b-4209-8bb0-21a5d9bccc11))
     (pin "1" (uuid 5d9865df-43cd-4274-8dcb-84d7cae32785))
+    (pin "2" (uuid d210869d-9e0b-4209-8bb0-21a5d9bccc11))
     (instances
       (project "MIDI_CV16"
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
@@ -6027,8 +6027,8 @@
     (property "Datasheet" "~" (at 255.27 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 9283b368-5b88-48cd-8271-8f4509b80409))
     (pin "1" (uuid 48d3aa07-339e-4660-b6ce-f3dac05f06af))
+    (pin "2" (uuid 9283b368-5b88-48cd-8271-8f4509b80409))
     (instances
       (project "MIDI_CV16"
         (path "/ba515087-2175-44fd-acc2-0e447df6195b/f58cfc93-0892-4036-8f05-b10b72ca44d6"
