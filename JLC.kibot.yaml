@@ -4,6 +4,11 @@ kibot:
 preflight:
   update_xml: true
   run_drc: true
+  drc:
+    filters:
+      - filter: "Ignore footprint library"
+        change_to: "ignore"
+        regex: "Footprint .* does not match copy in library"
 
 outputs:
   # KiBoM (KiCad Bill of Materials):
