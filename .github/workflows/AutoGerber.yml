@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: INTI-CMNB/KiBot@v2_k7
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
       # Required - kibot config file
         config: JLC.kibot.yaml
@@ -36,7 +36,7 @@ jobs:
         board: 'Core/MIDI_CV16.kicad_pcb'
       # optional - verbose output info
         verbose: 0
-    - uses: INTI-CMNB/KiBot@v2_k7
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
       # Required - kibot config file
         config: JLC.kibot.yaml
@@ -48,7 +48,7 @@ jobs:
         board: 'IO/MIDI_CV16_IO.kicad_pcb'
       # optional - verbose output info
         verbose: 0
-    - uses: INTI-CMNB/KiBot@v2_k7
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
       # Required - kibot config file
         config: JLC.kibot.yaml
